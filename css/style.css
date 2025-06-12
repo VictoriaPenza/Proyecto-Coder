@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #0B3138;
+
+}
+.contenedor {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: linear-gradient(to bottom, transparent,#0B3138), url("img/fondo.jpg");
+    background-size: cover;
+
+}
+h1{
+    color: #e9ecef;
+    text-align: center;
+    font-family: IBM Plex Serif ;
+    font-weight: 400;
+    margin: 20px;
+}
+.contenedor h3 {
+    color: rgba(219, 211, 211, 0.945);
+    padding-left: 40px;
+    padding-top: 40px;
+    font-family: IBM Plex Serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.contenedor h4 {
+    color: rgb(1, 13, 121);
+    font-family: IBM Plex Serif;
+    padding-left: 40px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.contenedor h5 {
+    color: rgba(219, 211, 211, 0.945);
+    font-family: IBM Plex Serif;
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.btn-class{
+    font-family: IBM Plex Serif;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+
+footer{
+    margin-top: 40px;
+    height: 100px;
+    background-color: #0B3138;
+}
+
+footer h4{
+    text-align: center;
+    color: #e9ecef;
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 20px;
+}
+.btn-whastapp{
+    position: fixed;
+	bottom: 50px;
+	right: 40px;
+}
+.btn-whastapp img{
+    height: 60px;
+}
+
+
+/*----------------- PÁGINA SERVICIOS   ------------------------------------*/
+
+
+.card-container {
+    background-color: #205058;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.card {
+    background-color: #0B3138;
+    border: 1px solid black; 
+    padding: 15px;
+    text-align: center; 
+    width: 100%; 
+    max-width: 300px; 
+    box-sizing: border-box; 
+    font-family: Roboto;
+    font-weight: 100;
+}
+.card p{
+    color: #e9ecef;
+}
+.card h2{
+    color: #e9ecef;
+}
+.image-placeholder {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.image-placeholder img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*----------------- PÁGINA CLIENTES   ------------------------------------*/
+.card-sub{
+    color: #e9ecef;
+    
+}
+.btn-clientes{
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+/*------------------------------ MEDIA QUERYS-----------------------------*/
+@media (max-width: 480px) {
+    .contenedor {
+        margin-top: 40px;
+        min-height: 200px;
+    }
+
+    .contenedor h3 {
+        font-size: clamp(1.5rem, 6vw, 2.5rem); 
+    }
+
+    .contenedor h4 {
+        font-size: clamp(1rem, 4.5vw, 1.8rem);
+    }
+
+    .contenedor h5 {
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
+    }
+    .btn-class .btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem; 
+    }
+    footer h4{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: calc(33.333% - 20px); 
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: calc(33.333% - 20px); 
+  }
+}
