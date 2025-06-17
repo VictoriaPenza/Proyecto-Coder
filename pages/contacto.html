@@ -8,15 +8,15 @@
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon_1.png" type="image/x-icon">
-    <title>SolucionesIT: Inicio</title>
+    <title>SolucionesIT: Contacto</title>
 </head>
 
 <body>
 
-    <header>
+   <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../img/favicon_1.png" alt="Logo Planeta Tierra" height="34"
+                <a class="navbar-brand" href="#"><img src="../img/favicon_1.png" alt="" height="34"
                         class="d-inline-block align-text-top">
                     SolucionesIT</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -29,27 +29,28 @@
                             <a class="nav-link" aria-current="page" href="../index.html">Incio</a>
                         </li>
                         <li class="nav-item">
-
-                            <a class="nav-link" href="./servicios/servicios.html">Servicios</a>
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                            
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Clientes</a>
+                            <a class="nav-link" href="./clientes.html">Clientes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Contacto</a>
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
+
         <div class="contenedor">
             <h3>Soluciones Informáticas</h3>
             <h4>Tu solución tecnológica integral<h4>
-            <h3>CONTACTO</h3> 
+            <h3>Contacto</h3> 
                     
     </header>
 
@@ -57,10 +58,55 @@
         <img src="../img/whatsapp.png" alt="Icono Whatsapp">
     </a>
 
-    <section>
+  <div class="contenedor-form">
+        <div class="form-section">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group full-width">
+                <label for="mensaje">Mensaje o Comentario:</label>
+                <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+            </div>
+            <div class="radio-group">
+                <p>Tema de Consulta:</p>
+                <div>
+                    <input type="radio" id="consulta1" name="tipo_consulta" value="soporte">
+                    <label for="consulta1">Soporte</label>
+                </div>
+                <div>
+                    <input type="radio" id="consulta2" name="tipo_consulta" value="desarrollo">
+                    <label for="consulta2">Desarrollo Web</label>
+                </div>
+                <div>
+                    <input type="radio" id="consulta3" name="tipo_consulta" value="asesoramiento">
+                    <label for="consulta3">Asesoramiento</label>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </div>
 
-    </section>
-
+        <div class="map-section">
+            <div class="map-placeholder">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22150.543718885543!2d-57.6434076!3d-30.253101400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95acd62339c57d31%3A0xd75874f1c161b52c!2sMonte%20Caseros%2C%20Corrientes!5e1!3m2!1ses!2sar!4v1750200668554!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-info">
+                <div class="form-group">
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <textarea id="direccion" name="direccion" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+   
+  </div>
 
 
     <footer>
