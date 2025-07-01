@@ -1,0 +1,9 @@
+@mixin common-padding-left {
+    padding-left: 40px;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

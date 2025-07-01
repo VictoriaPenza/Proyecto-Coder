@@ -1,0 +1,61 @@
+/*----------------- PÁGINA SERVICIOS ------------------------------------*/
+
+.card-container {
+    background-color: $light-blue-green; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: $dark-blue; 
+    border: 1px solid $black; 
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    font-family: $font-roboto; 
+    font-weight: 100;
+
+    p { 
+        color: $off-white; 
+    }
+
+    h2 { 
+        color: $off-white; 
+    }
+}
+
+.image-placeholder {
+    width: 100%;
+    margin-bottom: 10px;
+    @include flex-center; 
+    overflow: hidden;
+
+    img { 
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.card-sub {
+    color: $off-white; 
+}
+
+.btn-clientes {
+    text-align: center;
+    margin: 20px;
+}
+
+.cont-uno {
+    padding: 20px;
+    background-color: $light-blue-green; 
+
+    label {
+        color: $off-white; 
+    }
+}

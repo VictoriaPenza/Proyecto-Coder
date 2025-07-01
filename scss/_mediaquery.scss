@@ -1,0 +1,56 @@
+/*------------------------------ MEDIA QUERYS-----------------------------*/
+@media (max-width: 480px) {
+    .contenedor {
+        margin-top: 40px;
+        min-height: 200px;
+
+        h3 {
+            font-size: clamp(1.5rem, 6vw, 2.5rem);
+        }
+
+        h4 {
+            font-size: clamp(1rem, 4.5vw, 1.8rem);
+        }
+
+        h5 {
+            font-size: clamp(0.9rem, 3vw, 1.1rem);
+        }
+    }
+
+    .btn-class .btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    footer h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: calc(33.333% - 20px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width,
+    .radio-group,
+    button {
+        grid-column: span 1;
+    }
+}
